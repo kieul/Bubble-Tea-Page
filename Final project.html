@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bubble tea</title>
+    <style>
+      body {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        text-align: center;
+        color: #efefef;
+        font-family: "Playfair Display", serif;
+        font-size: 40px;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 8px;
+        color: bisque;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.4;
+        font-size: large;
+        color: #efefef;
+        margin-top: 8px;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #efefef;
+        border: 2px solid #956d57;
+        color: #956d57;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #956d57;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: #956d57;
+        font-size: small;
+        text-decoration: none;
+      }
+      .creator {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+      .creator-link {
+        text-decoration: none;
+        color: #956d57;
+      }
+      .container {
+        background: #2b2f33;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 50px 40px 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Bubble tea!</h1>
+      <h2>Especially Ultimate QQ Milktea 🤤</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/267/original/IMG_9888.jpg?1657730600"
+        alt="bubbletea"
+        width="300"
+      />
+      <p>
+        <strong>Bubble tea</strong> is a tea-based drink that originated in
+        Taiwan in the early 1980s. It most commonly consists of tea accompanied
+        by chewy tapioca balls, but it can be made with other toppings as well
+        such as grass jelly, aloe vera, red bean, etc.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Bubble_tea"
+        target="_blank"
+        class="learn-more"
+      >
+        <strong>Learn more on Wikipedia</strong>
+      </a>
+      <button class="buy-Button"><strong>Buy Bubble tea now!</strong></button>
+      <br />
+      <p class="creator">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/kieu-thuy-linh-023083234/"
+          target="_blank"
+          class="creator-link"
+        >
+          Kieu Thuy Linh
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch by email, meanwhile have lot of Bubble tea ! " +
+            emoji
+        );
+      }
+      let buyButton = document.querySelector(".buy-Button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
